@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buscador de imágenes de la NASA</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main>
+    <div class="container text-center col-lg-6 col-md-8 mx-auto mt-5">
+      <h1 class="fw-light">Buscador de Imágenes de la NASA</h1>
+      
+
+      <div class="input-group mb-3">
+        <input type="text" id="textoDeBusqueda" class="form-control" placeholder="Escribe algo... EJ: JUPITER" aria-label="Texto de búsqueda" aria-describedby="buscarBtn">
+        <div class="input-group-append">
+          <button class="btn btn-primary" id="buscarBtn" aria-label="Buscar">Buscar</button>
+        </div>
+      </div>
+      
+      <!-- Contenedor para mostrar los resultados de búsqueda -->
+      <div class="row" id="resultados"></div> <!-- Resultados se insertarán aquí -->
+    </div>
+  </main>
+
+
+  <footer class="text-muted py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Volver arriba</a>
+      </p>
+      <p class="mb-1">Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jóvenes a Programar</a>, y consume datos de <a href="https://api.nasa.gov/" target="_blank">api.nasa.gov</a>.</p>
+      <p class="mb-1">Generado con fines estrictamente educativos.</p>
+    </div>
+  </footer>
+
+  <script src="js/space.js"></script>
+
+</body>
+
+</html>
